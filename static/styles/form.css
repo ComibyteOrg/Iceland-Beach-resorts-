@@ -1,0 +1,6 @@
+@import url(setting.css);
+form{
+    width: 500px !important;
+    margin: 50px auto;
+    max-width: 100%;
+}

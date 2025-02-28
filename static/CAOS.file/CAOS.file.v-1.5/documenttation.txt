@@ -1,0 +1,79 @@
+CAOS DOCUMENTATION
+HOW TO USE CAOS LIBRARY IN YOUR PROJECT
+
+1. Download AnimateOnScroll Folder from the website
+2. Place the folder in your website folder
+3. Link the files (JS, CSS) to your project folder
+4. Use prefered Position class, Access the animation with ('animate') before the position (slide-left) 
+	E.G
+	<div class="col-md-2 animate slide-left>
+		Box 1
+	</div>
+
+O-- ANIMATION POSITION --O
+
+-- SLIDE ---
+--- slide-left
+--- slide-right
+--- slide-up
+--- slide-down
+
+---- ZOOM---
+--- zoom
+--- zoom-left
+--- zoom-right
+--- zoom-up
+--- zoom-down
+
+--- SPIN ---
+--- spin-right
+--- spin-left
+--- spin-down
+--- spin-up
+--- spin-down-left
+--- spin-down-right
+--- spin-up-left
+--- spin-up-right
+--- spin-zoom
+
+--- FADE ---
+--- fade-left
+--- fade-right
+--- fade-up
+--- fade-up-left
+--- fade-up-right
+--- fade-down
+--- fade-down-left
+--- fade-down-right
+--- fade-down
+--- fade-zoom
+--- fade-zoom-left
+--- fade-zoom-right
+--- fade-zoom-up-right
+--- fade-zoom-up-left
+--- fade-zoom-down-left
+--- fade-zoom-down-right
+--- fade-spin-left  
+--- fade-spin-right
+
+--- BLUR ---
+--- blur
+--- blur-spin-right
+--- blur-spin-left
+--- blur-zoom
+
+
+--- ANIMATION DELAY ---
+--- delay-1
+--- delay-2
+--- delay-3
+--- delay-4
+--- delay-5
+--- delay-6
+
+
+
+
+Use the documentation to work on or use this library to your project
+Note: This Folder should not be modified, in order to escape malfunction of the library
+© Copywrite Comibyte 2024

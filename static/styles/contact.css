@@ -1,0 +1,71 @@
+@import url(setting.css);
+#hero{
+    height: 80vh;
+    background-image: url(../images/gallery/imge\ \(8\).jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    font-family: 'Montserrat', sans-serif;
+}
+#hero .container-fluid{
+    width: 700px;
+    max-width: 100%;
+    padding: 0 15px;
+    text-align: center;
+}
+#hero .container-fluid h1{
+    font-weight: 600;
+    margin: 20px 0;
+    font-family: kanit, sans-serif;
+    color: var(--fifth-color);
+}
+
+/* form styling */
+form{
+    width: 700px !important;
+    max-width: 100%;
+    margin: 40px auto;
+}
+form input, form textarea{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #c9c9c9;
+    margin: 10px auto;
+    padding: 10px 20px;
+    width: 100%;
+    transition: .5s;
+}
+form input:focus, form textarea:focus{
+    border-bottom-color: 1px solid var(--primary-color);
+}
+form textarea{
+    height: 150px;
+    resize: none;
+}
+form button{
+    padding:10px 50px;
+    background-color: var(--primary-color);
+    color: var(--fifth-color);
+    transition: .5s;   
+    border: 1px solid var(--primary-color);
+
+}
+form button:hover{
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+/* map section */
+#map{
+    width: 900px;
+    max-width: 100%;
+    margin: 40px auto;
+    height: 400px;
+}
+#map iframe{
+    width: 100%;
+    height: 100%;
+}

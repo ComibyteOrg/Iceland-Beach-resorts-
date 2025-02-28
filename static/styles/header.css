@@ -1,0 +1,179 @@
+.about {
+  position: fixed; 
+  z-index: 10;
+  bottom: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  transition: all 0.2s ease;
+}
+.about .bg_links {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.721);
+  border-radius: 100%;
+  backdrop-filter: blur(5px);
+  position: absolute;
+}
+.about .logo {
+  width: 40px;
+  height: 40px;
+  z-index: 9;
+  opacity: 0.9;
+  transition: all 1s 0.2s ease;
+  color: var(--fifth-color);
+  bottom: 0;
+  right: 0;
+}
+.about .social {
+  opacity: 0;
+  right: 0;
+  bottom: 0;
+}
+.about .social .icon {
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  transition: all 0.2s ease, background-color 0.4s ease;
+  opacity: 0;
+  border-radius: 100%;
+  color: var(--fifth-color);
+}
+.about:hover {
+  width: 105px;
+  height: 105px;
+  transition: all 0.6s cubic-bezier(0.64, 0.01, 0.07, 1.65);
+}
+.about:hover .logo {
+  opacity: 1;
+  transition: all 0.6s ease;
+}
+.about:hover .social {
+  opacity: 1;
+}
+.about:hover .social .icon {
+  opacity: 0.9;
+}
+.about:hover .social:hover {
+  background-size: 28px;
+}
+.about:hover .social:hover .icon {
+  background-size: 65%;
+  opacity: 1;
+}
+.about:hover .social.twitter {
+  right: 0;
+  bottom: calc(100% - 40px);
+  transition: all 0.3s 0s cubic-bezier(0.64, 0.01, 0.07, 1.65);
+}
+.about:hover .social.instagram {
+  bottom: 45%;
+  right: 45%;
+  transition: all 0.3s 0.15s cubic-bezier(0.64, 0.01, 0.07, 1.65);
+}
+.bg_links:hover {
+  background-color: var(--primary-color);
+}
+.about:hover .social.facebook {
+  bottom: 0;
+  right: calc(100% - 40px);
+  transition: all 0.3s 0.25s cubic-bezier(0.64, 0.01, 0.07, 1.65);
+}
+
+
+/* menu bar style */
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  width: 100%;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  background: var(--fifth-color);
+  z-index: 1000;
+}
+.offcanvas-body a{
+  padding: 10px !important;
+  display: block;
+  color: var(--primary-color);
+  transition: .5s;
+}
+.offcanvas-body li{
+  padding: 10px;
+}
+
+.offcanvas-body li:hover{
+  background-color: var(--primary-color);
+}
+.offcanvas-body li:hover a{
+  color: var(--fifth-color);
+  background-color: transparent;
+}
+.dropdown-item:hover{
+  background-color: transparent !important;
+}
+.navicon{
+  margin-right: 20px !important;
+}
+
+/* footer */
+footer{
+  background-color: #dad8d8ca !important;
+  font-family: kanitthin, Arial, Helvetica, sans-serif;
+}
+footer a:hover {
+  text-decoration: underline;
+  color: #007bff;
+}
+
+footer i:hover {
+  color: #007bff;
+  transform: scale(1.1);
+  transition: color 0.2s, transform 0.2s;
+}
+
+
+/* page loader */
+.loading{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.loader {
+  width: 60px;
+  aspect-ratio: 1;
+  --c:no-repeat linear-gradient(#da9500 0 0);
+  background: 
+    var(--c) 0    0,
+    var(--c) 0    100%, 
+    var(--c) 50%  50%,   
+    var(--c) 100% 0, 
+    var(--c) 100% 100%;
+  animation: l13 1s infinite alternate;
+}
+
+@keyframes l13 {
+ 0%,10%   {background-size:20% 100%}
+ 50%      {background-size:20%  20%}
+ 90%,100% {background-size:100% 20%}
+}
+.loading.active{
+  display: none;
+}

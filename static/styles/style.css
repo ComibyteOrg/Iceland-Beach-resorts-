@@ -1,0 +1,130 @@
+@import url(header.css);
+@import url(setting.css);
+/* carousel section */
+/* welcome section */
+.welcome-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  max-width: 1200px;
+  margin: 90px auto;
+  flex-wrap: wrap;
+}
+
+.welcome-title {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #005b7f;
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.welcome-title::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: #005b7f;
+  margin-left: 10px;
+}
+
+.welcome-text {
+  flex: 2;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-left: 20px;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+  .welcome-section {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+  .welcome-title {
+      margin-bottom: 10px;
+  }
+  .welcome-text {
+      margin-left: 0;
+  }
+}
+
+
+/* about section */
+#about{
+  padding: 20px;
+}
+.about-image{
+  height: 600px;
+}
+.about-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about-heading{
+  color: var(--primary-color);
+}
+.about-header{
+  font-size: 30px;
+  font-family: kanit, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+.about-text{
+  margin: 30px 0;
+  color: var(--fourth-color);
+  font-family: kanitthin, sans-serif;
+}
+.button_link{
+  text-decoration: none;
+  color: var(--fifth-color);
+  background-color: var(--primary-color) !important;
+  border: 1px solid var(--primary-color) !important;
+  transition: .5s;
+  padding: 10px 20px;
+}
+.button_link:hover{
+  background: transparent !important;
+  color: var(--primary-color) !important;
+}
+.small-img{
+  height: 200px;
+}
+.small-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* facility section */
+.card{
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card:hover {
+  transform: translateY(-9px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+.img-div{
+  height: 200px;
+}
+
+/* image gallery */
+.images-galery{
+  height: 500px;
+}
+.images-galery img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

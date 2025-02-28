@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&display=swap");
+:root{
+    --primary-color: #00002b;
+    --secondary-color: #f7b100;
+    --third-color: #2a83ff;
+    --fourth-color: #1c1c1c;
+    --fifth-color: #ffffff;
+}
+/* fonts */
+@font-face {
+  font-family: geistmono;
+  src: url(../fonts/GeistMono-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: kanitbold;
+  src: url(../fonts/Kanit-SemiBold.ttf);
+}
+@font-face {
+  font-family: kanitthin;
+  src: url(../fonts/Kanit-Light.ttf);
+}
+
+::selection{
+  background: var(--primary-color);
+  color: var(--fifth-color);
+}
+::-moz-selection{
+  background: var(--primary-color);
+  color: var(--fifth-color);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 0;
+    outline: 0;
+    -webkit-tap-highlight-color: transparent;
+    text-decoration: none;
+    color: inherit;
+    box-sizing: border-box;
+    box-shadow: none !important;
+  }
+  *:focus {
+    outline: 0;
+  }
+  
+  body {
+    font-family: "Raleway", sans-serif;
+    overflow-x: hidden !important;
+  }
